@@ -17,4 +17,9 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/',[EmployeeinfoController::class, 'index'])->name('employe.index');
+Route::get('/',[EmployeeinfoController::class, 'index'])->name('employees.index');
+Route::post('/delete/{id}',[EmployeeinfoController::class, 'destroy'])->name('employees.destroy');
+Route::get('/show/{id}',[EmployeeinfoController::class, 'show'])->name('employees.show');
+Route::get('/search',[EmployeeinfoController::class, 'search'])->name('employees.search');
+Route::get('/insert',[EmployeeinfoController::class, 'create'])->name('employees.create');
+Route::post('/store',[EmployeeinfoController::class, 'store'])->name('employees.store');

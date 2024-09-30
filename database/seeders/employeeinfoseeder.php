@@ -14,6 +14,6 @@ class employeeinfoseeder extends Seeder
      */
     public function run()
     {
-        employeeinfo::factory(500)->create();
+        employeeinfo::factory(90)->create();
     }
 }
