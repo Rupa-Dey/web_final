@@ -43,7 +43,7 @@ class EmployeeinfoController extends Controller
             'job_title' => 'required|string|max:255',
             'joining_date' => 'required|date',
             'salary' => 'required|numeric',
-            'email' => 'required|email|unique:employees,email',
+            'email' => 'required|email|unique:employeeinfos,email',
             'mobile_no' => 'required|string|max:20',
             'address' => 'required|string|max:255'
         ]);
